@@ -10,45 +10,62 @@ body{
   font-family: 'Fredoka', sans-serif;
 }
 
+h1, h3{
+  font-family: 'Fredoka One', cursive;
+}
+
+/* Header */
+
 h1{
   color: #E43170;
   text-align: center;
-  margin: 50px;
+  margin: 25px auto;
 }
 
-h3{
-  text-transform: uppercase;
-}
+/* Main */
+
 .container{
-  width: 1200px;
-  margin:50px 50px;
-  border: 1px solid black;
+  width: 90%;
+  max-width: 1200px;
+  margin:0 auto;
+  /* border: 1px solid black; */
 }
 
 .head{
   text-align: center;
-
-}
-
-.cards{
-  text-align: center;
+  margin: 25px auto;
 }
 
 .row{
   display: inline-block;
-
+  width: 100%;
 }
 
-.row .col{
+.col{
   float:left;
-  width: 360px;
+  width:calc(100%/3 - 30px);
+  margin:15px;
   background-color: black;
+}
+
+img{
+  height: 100px;
+  float: left;
+  margin-right: 15px;
 }
 
 .description{
   padding:10px;
   line-height: 1.5rem;
   text-align: left;
+}
+
+h3{
+  text-transform: uppercase;
+}
+
+h4{
+  font-family: 'Fredoka', sans-serif;
 }
 
 h2, h3, h4, h5, h6{
@@ -59,8 +76,3 @@ h2, h3, h4, h5, h6{
   color: #4DCCF2;
 }
 
-img{
-  height: 100px;
-  float: left;
-  margin-right: 15px;
-}
