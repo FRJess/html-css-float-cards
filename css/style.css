@@ -9,3 +9,35 @@
 body{
   font-family: 'Fredoka', sans-serif;
 }
+
+h1{
+  color: #E43170;
+  text-align: center;
+  margin: 50px 50px;
+}
+
+.head{
+  text-align: center;
+  margin:50px 50px;
+}
+
+.row{
+  display: inline-block;
+}
+
+.row .col{
+  float:left;
+  margin-right:50px;
+}
+
+.col{
+  background-color: black;
+}
+
+h2{
+  color: white;
+}
+
+.mail{
+  color: #4DCCF2;
+}
