@@ -46,6 +46,7 @@ h1{
   width:calc(100%/3 - 30px);
   margin:15px;
   background-color: black;
+  box-shadow:0 0 8px 4px #C4C4C3;
 }
 
 img{
