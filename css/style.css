@@ -8,11 +8,23 @@
 
 body{
   font-family: 'Fredoka', sans-serif;
+  background-color: #fffffe;
+  color: white;
 }
 
 h1, h3{
   font-family: 'Fredoka One', cursive;
 }
+
+.clearfix::after{
+content: "";
+display: table;
+clear: both;
+}
+
+/* .debug{
+  border: 1px solid black;
+} */
 
 /* Header */
 
@@ -28,52 +40,55 @@ h1{
   width: 90%;
   max-width: 1200px;
   margin:0 auto;
-  /* border: 1px solid black; */
 }
 
-.head{
+.intro-text{
   text-align: center;
-  margin: 25px auto;
+  margin-bottom: 25px;
+  padding: 0 16px;
+  color: black;
 }
 
 .row{
-  display: inline-block;
-  width: 100%;
+  padding: 10px;
 }
 
 .col{
   float:left;
-  width:calc(100%/3 - 30px);
-  margin:15px;
+  width: calc(100% / 3);
+  min-width: 344px;
+  padding:0 16px;
+  margin-bottom: 50px;
+}
+
+.card{
   background-color: black;
   box-shadow:0 0 8px 4px #C4C4C3;
+  height: 100px;
 }
 
-img{
+.card img{
   height: 100px;
   float: left;
-  margin-right: 15px;
 }
 
-.description{
-  padding:10px;
+.card .description{
+  float:right;
+  width: calc(100% - 100px);
+  padding-left:30px;
+  padding-top: 10px;
   line-height: 1.5rem;
-  text-align: left;
 }
 
-h3{
+.card h3{
   text-transform: uppercase;
 }
 
-h4{
-  font-family: 'Fredoka', sans-serif;
-}
-
-h2, h3, h4, h5, h6{
-  color: white;
-}
-
-.mail{
+.card a{
   color: #4DCCF2;
+  text-decoration: none;
 }
 
+.card a:hover{
+  text-decoration: underline;
+}
